@@ -1,0 +1,56 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+.container {
+     display: flex;
+     justify-content: center;
+}
+
+.row {
+     width: 80%;
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+}
+
+.d-flex {
+     display: flex;
+
+}
+
+
+.bg-orange {
+     background-color: rgb(255, 136, 0);
+}
+
+.white{
+     color: white;
+}
+
+
+.logo {
+     width: 150px;
+
+}
+
+ul {
+     list-style-type: none;
+}
+
+li {
+     padding-right: 10px;
+}
+.col20{
+     width: 20%;
+     display: flex;
+     justify-content: center;
+}
+
+.col20 > i {
+     padding-right: 10px;
+}
