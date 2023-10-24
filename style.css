@@ -11,11 +11,20 @@
 
 .row {
      width: 80%;
-     padding: 20px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
 
+     display: flex;
+
+     align-items: center;
+     flex-wrap: wrap;
+
+}
+
+.sp-between {
+     justify-content: space-between;
+}
+
+header {
+     margin-bottom: 40px;
 }
 
 .d-flex {
@@ -23,19 +32,39 @@
 
 }
 
+.gap {
+     gap: 20px;
+}
+
 
 .bg-orange {
      background-color: rgb(255, 136, 0);
 }
 
-.white{
+.white {
      color: white;
+}
+
+.bg-white {
+     background-color: white;
+}
+
+.bg-red {
+     background-color: red;
+}
+
+.bg-green {
+     background-color: green;
+}
+
+.red {
+     color: red;
 }
 
 
 .logo {
      width: 150px;
-
+     padding: 20px;
 }
 
 ul {
@@ -45,12 +74,94 @@ ul {
 li {
      padding-right: 10px;
 }
-.col20{
+
+
+
+
+
+.col20 {
      width: 20%;
      display: flex;
      justify-content: center;
 }
 
-.col20 > i {
+.col20>i {
      padding-right: 10px;
+}
+
+
+
+.col33 {
+
+
+     width: calc(33% - 30px);
+     margin: 10px;
+}
+
+img {
+     width: 100%;
+}
+
+.product {
+     position: relative;
+     width: 100%;
+}
+
+.cuore {
+     position: absolute;
+     right: 0px;
+     top: 10px;
+     padding: 10px;
+     font-size: 30px;
+}
+
+.sconto {
+     position: absolute;
+     left: 0px;
+     bottom: 90px;
+     padding: 5px;
+
+}
+
+.sostenibilita {
+     position: absolute;
+     left: 45px;
+     bottom: 90px;
+     padding: 5px;
+}
+
+.sostenibilita-L {
+     position: absolute;
+     left: 0px;
+     bottom: 90px;
+     padding: 5px;
+}
+
+.brand {
+     color: rgb(157, 157, 157);
+}
+
+.barrato {
+     font-size: 15px;
+     text-decoration: line-through
+}
+
+
+.nascondi {
+     display: none;
+}
+.mostra{
+     display: block;
+}
+
+.product:hover .nascondi {
+     display: block;
+}
+
+.product:hover .mostra {
+     display: none;
+}
+
+.product:hover .cuore{
+     color: red;
 }
