@@ -4,6 +4,10 @@
      box-sizing: border-box;
 }
 
+
+
+
+
 .container {
      display: flex;
      justify-content: center;
@@ -11,14 +15,37 @@
 
 .row {
      width: 80%;
-
      display: flex;
-
      align-items: center;
      flex-wrap: wrap;
 
 }
+.col30 {
+     width: 30%;
+    
+}
 
+.col20 {
+     width: 20%;
+     display: flex;
+     justify-content: center;
+}
+.col33 {
+     width: calc(33% - 30px);
+     margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+.col20>i {
+     padding-right: 10px;
+}
 .sp-between {
      justify-content: space-between;
 }
@@ -35,6 +62,120 @@ header {
 .gap {
      gap: 20px;
 }
+
+.logo {
+     width: 150px;
+     padding: 20px;
+}
+
+ul {
+     list-style-type: none;
+}
+
+li {
+     padding-right: 10px;
+}
+
+img {
+     width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.product {
+     position: relative;
+     width: 100%;
+}
+
+.cuore {
+     position: absolute;
+     right: 0px;
+     top: 10px;
+     padding: 10px;
+     font-size: 30px;
+}
+
+.sconto {
+     position: absolute;
+     left: 0px;
+     bottom: 90px;
+     padding: 5px;
+}
+.sostenibilita {
+     position: absolute;
+     left: 45px;
+     bottom: 90px;
+     padding: 5px;
+}
+.sostenibilita-L {
+     position: absolute;
+     left: 0px;
+     bottom: 90px;
+     padding: 5px;
+}
+.brand {
+     color: rgb(157, 157, 157);
+}
+.barrato {
+     font-size: 15px;
+     text-decoration: line-through
+}
+
+
+
+
+
+
+
+
+.nascondi {
+     display: none;
+}
+.mostra{
+     display: block;
+}
+
+.product:hover .nascondi {
+     display: block;
+}
+
+.product:hover .mostra {
+     display: none;
+}
+
+.product:hover .cuore{
+     color: red;
+}
+
+
+
+
+
+.socials > i{
+     padding: 10px;
+   
+}
+footer{
+     margin-top: 50px;
+}
+.h120{
+     height: 120px;
+     position: relative;
+}
+
+
+
+
+
+
+
 
 
 .bg-orange {
@@ -56,112 +197,10 @@ header {
 .bg-green {
      background-color: green;
 }
+.bg-black{
+     background-color: black;
+}
 
 .red {
-     color: red;
-}
-
-
-.logo {
-     width: 150px;
-     padding: 20px;
-}
-
-ul {
-     list-style-type: none;
-}
-
-li {
-     padding-right: 10px;
-}
-
-
-
-
-
-.col20 {
-     width: 20%;
-     display: flex;
-     justify-content: center;
-}
-
-.col20>i {
-     padding-right: 10px;
-}
-
-
-
-.col33 {
-
-
-     width: calc(33% - 30px);
-     margin: 10px;
-}
-
-img {
-     width: 100%;
-}
-
-.product {
-     position: relative;
-     width: 100%;
-}
-
-.cuore {
-     position: absolute;
-     right: 0px;
-     top: 10px;
-     padding: 10px;
-     font-size: 30px;
-}
-
-.sconto {
-     position: absolute;
-     left: 0px;
-     bottom: 90px;
-     padding: 5px;
-
-}
-
-.sostenibilita {
-     position: absolute;
-     left: 45px;
-     bottom: 90px;
-     padding: 5px;
-}
-
-.sostenibilita-L {
-     position: absolute;
-     left: 0px;
-     bottom: 90px;
-     padding: 5px;
-}
-
-.brand {
-     color: rgb(157, 157, 157);
-}
-
-.barrato {
-     font-size: 15px;
-     text-decoration: line-through
-}
-
-
-.nascondi {
-     display: none;
-}
-.mostra{
-     display: block;
-}
-
-.product:hover .nascondi {
-     display: block;
-}
-
-.product:hover .mostra {
-     display: none;
-}
-
-.product:hover .cuore{
      color: red;
 }
